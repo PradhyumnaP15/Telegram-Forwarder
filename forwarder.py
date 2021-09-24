@@ -15,7 +15,7 @@ API_ID = os.getenv('api_id')
 API_HASH = os.getenv('api_hash')
 SESSION_NAME = os.getenv('session_name')
 
-assert API_ID and API_HASH and SESSION_NAME
+assert API_ID and API_HASH and SESSION_NAME, 'ASSERTION ERROR: One or More Missing (in API Id, API Hash or Session Name)'
 
 def forwarder():
     print(config)
