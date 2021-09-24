@@ -1,0 +1,9 @@
+# The channel names that you'd like to forward messages from.
+# The user running the client must have these channels present on it's dialogs.
+your_source_chats:
+  - 'Source Group'
+
+# The output channel names that the messages will be forwarded to.
+# The user running the client must have a write access to those channels, and have the channels present on theirs dialogs.
+your_target_chats: 
+  - 'Target Group'
