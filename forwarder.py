@@ -7,12 +7,15 @@ import logging
 import sys
 import asyncio
 
+api_id: 2847976
+api_hash: 55e25e81f54f33fec14f12faa9964554
+    
 load_dotenv()
 API_ID = os.getenv('api_id')
 API_HASH = os.getenv('api_hash')
 SESSION_NAME = os.getenv('session_name')
 
-assert API_ID and API_HASH and SESSION_NAME, 'ASSERTION ERROR: One or More Missing (in API Id, API Hash or Session Name)'
+assert API_ID and API_HASH and SESSION_NAME
 
 def forwarder():
     print(config)
